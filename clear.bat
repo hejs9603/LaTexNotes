@@ -1,0 +1,1 @@
+del  /f /s /q  "*.aux" "*.bbl" "*.blg" "*.log" "*.gz" "*.toc"
