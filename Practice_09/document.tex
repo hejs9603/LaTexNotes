@@ -1,0 +1,52 @@
+\documentclass{ctexart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+	\begin{gather}	%	多行公式，均有编号
+		a + b = c \\
+		e + f = g
+	\end{gather}
+
+	\begin{gather*}	%	多行公式，无编号
+		a + b = c \\
+		e + f = g
+	\end{gather*}
+	
+	\begin{gather}	%	\\前使用\notag,阻止编号
+		a + b = c \notag\\
+		e + f = g
+	\end{gather}
+	
+	%	带编号,对齐
+	\begin{align}
+		x &= \cos t\\
+		y &= \sin(t+1)
+	\end{align}
+	
+	%	不带编号
+	\begin{align*}
+		y &= t & x &= \cos t & x &= t\\
+		y &= 2t & y &= \sin(t+1) & y &= \sin t
+	\end{align*}
+	
+	%	多行一体公式
+	\begin{equation}
+		\begin{split}
+			\cos 2x &= \cos^2 x - \sin^2 x \\
+					&= 2\cos^2 x -1
+		\end{split}
+	\end{equation}
+	
+	%	case 环境，分段函数
+	%	每行公式使用&分割为两部分
+	%	通常表示值和后边的条件
+	\begin{equation}
+		D(x) = \begin{cases}	% 必须要\text{}才能处理中文
+					1,& \text{如果 } x \in \mathbb{Q};\\
+					0,& \text{如果 } x \in \mathbb{R} \setminus\mathbb{Q};
+				\end{cases}
+	\end{equation}
+	
+\end{document}

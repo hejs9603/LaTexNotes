@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{xltxtra}	%	加入xetex的logo
+\usepackage{texnames}
+\usepackage{mflogo}
+
+\begin{document}
+	\section{空格}
+	%	空格
+	%	1em
+	a\quad b
+	
+	%	2em
+	a\qquad b
+	
+	%	1/6em
+	a\,b a\thinspace b
+		
+	%	0.5em
+	a\enspace b
+	
+	%	空格
+	a\ b
+	
+	%	硬空格
+	a~b
+	
+	%	1pc = 12pt = 4.128mm
+	a\kern 1pc b
+	
+	a\kern -1em b
+	
+	a\hskip 1em b
+	
+	a\hspace{35pt}b
+	
+	%	占位空格
+	a\hphantom{xyz}b
+	
+	%	弹性长度
+	a\hfill b\hfill b\hfill b\hfill b\hfill b\hfill b\hfill b
+	
+	\section{控制符}	% 特殊字符加\,\\表示换行
+	%	\textbackslash	反斜杠
+	\# \$ \% \{\} \~{} \_{} \^{} \textbackslash \&
+	
+	\section{排版符号}
+	\S \P \dag \ddag \copyright \pounds
+	
+	\section{\LaTeX 标志符号}
+	\TeX{}	\LaTeX{}	\LaTeXe{}
+	\XeLaTeX	%	需要宏包
+	
+	%还有其他标志
+	% texnames宏包
+	\AmSTeX{} \AmS-\LaTeX{}
+	\BibTeX{} \LuaTeX{}
+	
+	%mflogo宏包
+	\METAFONT{}	\MF{} \MP{}
+	
+	\section{引号}
+	`(倒单引号+引号)	'	\quad	``（）倒单引号+双引号 "		``（）倒单引号+双单）''
+	
+	\section{连字符}
+	- -- ---
+	
+	\section{非英文字符}
+	\oe \quad\OE \quad\ae \quad\AE \quad\aa \quad\AA \quad\o \quad\O \quad\l \quad\L \quad\ss \quad\SS \quad!` \quad?`
+	
+	\section{重音符号}
+	\`o \quad\'o \quad\^o \quad\''o \quad\~o \quad\=o \quad\.o \quad\u{o} \quad\v{o} \quad\H{o} \quad\r{o} \quad\t{o} \quad\b{o} \quad\c{o} \quad\d{o}
+\end{document}

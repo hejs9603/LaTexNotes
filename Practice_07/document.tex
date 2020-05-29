@@ -1,0 +1,60 @@
+\documentclass{ctexart}
+
+\usepackage{amsmath}
+
+\begin{document}
+	\section{简介}
+		\LaTeX{}文档分为数学模式和文本模式
+		
+	\section{行内公式}
+	\subsection{美元符号}
+		$a + b = c$
+	\subsection{小括号}
+		\( a + b = c \)
+	\subsection{math环境}
+		\begin{math}
+			 1 + 2 = 3
+		\end{math}
+	\section{上下标}
+	\subsection{上标}
+		$X^2 X^{29}$
+	\subsection{下标}
+		$X_2 X_{34}$
+	\section{希腊字母}
+		$\alpha	\beta	\gamma	\pi	\omega$	
+		
+		$\Gamma	\Delta	\Theta	\Pi	\Omega$ 
+	\section{数字函数}
+		$\log$		$\sin$		$\cos$		$\arccos$	$\arcsin$		$\arctan$		$\ln$
+		
+		$y = log_{10} 10$
+		
+		$y = \sqrt{2}$
+		
+	\section{分式}
+		$3/4$	%	横
+		$\frac{3}{4}$	%	竖
+		
+	\section{段间公式}
+	\subsection{美元符号}
+		$$a+b=c$$
+	\subsection{中括号}
+		\[a + b = c\]
+	\subsection{displaymath环境}
+		\begin{displaymath}
+			1 + 2 = 3
+		\end{displaymath}
+	\subsection{动编号的equation}
+		见式\ref{eq:formulate_01}:
+		\begin{equation}
+			1 + 2 = 3
+			\label{eq:formulate_01}
+		\end{equation}
+	\subsection{无编号的equation}	%	需要宏包
+		见式\ref{eq:formulate_02}:	
+		\begin{equation*}
+			1 + 2 = 3
+			\label{eq:formulate_02}
+		\end{equation*}
+	
+\end{document}

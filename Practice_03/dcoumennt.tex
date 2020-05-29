@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage[10pt]{ctex}	%	使用中文字体
+
+\newcommand{\mytextfont}{\textit{\textbf{\textsf{\zihao{3}你好}}}}
+
+\begin{document}
+	%	字体族设置：罗马、无衬线、打字机
+	\textrm{Roman Family}	\textsf{Sans Serif}	\texttt{Typewritter Family}	%	命令模式，括号内变字体
+	
+	\rmfamily Roman Family	\sffamily Sans Serif	\ttfamily Typewritter Family	%	字体申明，后文为指定模式；遇到下一个申明，结束；或者括号限定
+	
+	
+	%	字体系类列设置（粗细、宽度）
+	\textmd{Medium Series}	\textbf{Boldface Series}
+	
+	\mdseries Medium Series	\bfseries Boldface Series
+	
+	
+	%	字体形状设置（直立，斜体，伪斜体，小型大写）
+	\textup{text}	\textit{text}	\textsl{text}	\textsc{text}
+	
+	\upshape text	\itshape text	\slshape text	\scshape text
+	
+	%	中文字体
+	{\songti 哈哈哈}\quad	{\heiti 哈哈哈}\quad	{\fangsong	哈哈哈}\quad	{\kaishu 哈哈哈}
+	
+	中文字体的\textbf{粗体}和\textit{斜体}
+	
+	%	字体大小设置,第一行字体[14pt]
+	{\tiny    bsivuuef}\\
+	{\scriptsize    bsivuuef}\\
+	{\footnotesize    bsivuuef}\\
+	{\small    bsivuuef}\\
+	{\normalsize   bsivuuef}\\
+	{\large		bsivuuef}\\
+	{\Large    bsivuuef}\\
+	{\LARGE   bsivuuef}\\
+	{\huge    bsivuuef}\\
+	{\Huge    bsivuuef}\\
+	
+	%	字号设置，负号表示是小
+	\zihao{0} 初号 \quad \zihao{-0} 小初号 \quad \zihao{1} 一号 \quad \zihao{-1} 小一\\
+	\zihao{2} 二号 \quad \zihao{-2} 小二 \quad \zihao{3} 三号 \quad \zihao{-3} 小三\\
+	\zihao{4} 四号 \quad \zihao{-4} 小四 \quad \zihao{5} 五号 \quad \zihao{-5} 小五\\
+	\zihao{6} 六号 \quad \zihao{-6} 小六 \quad \zihao{7} 七号 \quad \zihao{8} 八号
+	
+	%	使用texdoc ctex
+	
+	%	使用自定义字体
+	\mytextfont
+
+\end{document}
